@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        input {
+            width: 200px;
+            height: 30px;
+            display: inline-block;
+        }
+
+        div {
+            display: inline-block;
+            margin-top: 7px;
+            width: 20px;
+            height: 20px;
+
+        }
+
+        .green {
+            background-color: green;
+
+        }
+
+        .red {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="text">
+    <div class="feedback"></div>
+    <script>
+
+        // let chili = (...s) => {
+        //     let total = null
+        //     s.forEach(item =>
+        //         total += item
+        //     )
+        //     return total
+        // }
+        let chili = function (...argument) {
+            let total = null
+            argument.forEach(element => {
+                total += element
+            });
+            return total
+        }
+
+
+
+
+
+        console.log(chili(1, 2, 3));
+        console.log(chili(1, 2, 3, 4, 5, 67));
+    </script>
+</body>
+
+</html>
